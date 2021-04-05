@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int arr[10];
+    int arr[11];
     int even=0;
     int odd=0;
     int oddcnt=0;
@@ -16,7 +16,7 @@ int main(){
             oddcnt++;
         }
     }
-    printf("sum : %d\navg: %.1lf", even, (double)odd/oddcnt);
-    printf("avg: %.1lf", (double)odd/oddcnt);
+    printf("sum : %d\n", even);
+    printf("avg : %.1lf", (double)odd/oddcnt);
 return 0;
 }
