@@ -11,10 +11,7 @@ int main(){
         cnt++;
     }
     printf("%d\n", cnt);
-    for(int i=0; i<100;i++){
-        if(arr[i]==0){
-            break;
-        }
+    for(int i=0; i<cnt;i++){
         if(arr[i]%2==0){
             printf("%d ", arr[i]/2);
         }
