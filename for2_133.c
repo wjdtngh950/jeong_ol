@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main(){
     int n;
-int even =0;
-int odd =0;
-    for(int i =0;i<10;i++){
-        scanf("%d ", &n);
-        if(n%2==0){
-            even++;
-        }
-        else{
-            odd++;
-        }
+    int n1;
+    int cnt=0;
+    int sum=0;
+
+    scanf("%d", &n);
+    for(int i =0; i<n;i++){
+        scanf("%d", &n1);
+        cnt++;
+        sum+=n1;
     }
-    printf("even : %d\nodd : %d", even, odd);
+    printf("%.2lf",(double)sum/cnt);
     return 0;
+
 }
