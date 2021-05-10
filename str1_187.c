@@ -1,24 +1,22 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char str1[101];
+    char str2[101];
+    int n;
+    int len;
 
-char arr1[101];
-char arr2[101];
-int n;
+    scanf("%s", str1);
+    len=strlen(str1);
 
-int main(void) {
-    scanf("%s", arr1);
-    int len = strlen(arr1);
-
-
-    while ((len = strlen(arr1)) > 1) {
-        strcpy(arr2, arr1);
+    while((len=strlen(str1))>1){
+        strcpy(str2, str1);
         scanf("%d", &n);
-        if (len < n) {
-            n = len;
+        if(n>len){
+            n=len;
         }
-        strcpy(arr1 + n - 1, arr2 + n);
-        printf("%s\n", arr1);
+        strcpy(str1+n-1, str2+n);
+        printf("%s\n", str1);
     }
-
     return 0;
 }
