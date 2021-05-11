@@ -15,7 +15,7 @@ while((len=strlen(str1))>1){
         n=len;
     }
     strcpy(str1+n-1, str2+n);
-    printf("%s", str1);
+    printf("%s\n", str1);
 }
 return 0;
 }
