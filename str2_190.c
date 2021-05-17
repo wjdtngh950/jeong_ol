@@ -6,7 +6,7 @@ int main(){
     char str3[]="lily";
     char str4[]="daffodil";
     char str5[]="azalea";
-    int c;
+    char c;
     int cnt=0;
 
     scanf(" %c", &c);
