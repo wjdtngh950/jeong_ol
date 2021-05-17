@@ -7,7 +7,7 @@ int main(){
 
     for(int i=0;i<50;i++){
         scanf("%s", str[i]);
-        if(strcmp("0", str[i])==0){
+        if(strcmp(str[i], "0")==0){
             break;
         }
         cnt++;
