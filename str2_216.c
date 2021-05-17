@@ -6,8 +6,7 @@ int main() {
 
     while(1) {
        scanf("%s", str);
-       printf("\n");
-       if(str=="END"){
+       if(strcmp(str, "END")==0){
            break;
        }
 
@@ -15,6 +14,7 @@ int main() {
        for(int i=len-1;i>=0;i--){
            printf("%c", str[i]);
        }
+        printf("\n");
     }
     return 0;
 }
