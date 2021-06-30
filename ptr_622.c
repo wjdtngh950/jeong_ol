@@ -4,6 +4,7 @@ int main(){
     int* ptr=arr;
     for(int i =0; i<5;i++){
         scanf("%d", ptr+i);
+        //ptr+i=&arr[i]
     }
     for(int i =0;i<5;i+=2){
         printf("%d ", ptr[i]);
