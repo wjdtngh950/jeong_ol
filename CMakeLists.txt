@@ -5,5 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-add_executable(temp
-        test1.c)
+add_executable(temp ptr_624.c)
